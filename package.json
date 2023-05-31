@@ -1,10 +1,12 @@
 {
+  "homepage": "http://BeeAwwad.github.io/ninja_foods",
   "name": "ninja_foods",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,8 +18,10 @@
   "bugs": {
     "url": "https://github.com/BeeAwwad/ninja_foods/issues"
   },
-  "homepage": "https://github.com/BeeAwwad/ninja_foods#readme",
   "dependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
